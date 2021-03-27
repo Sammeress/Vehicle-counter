@@ -41,7 +41,7 @@ while cap.isOpened():
     cv2.imshow('Original Video', frame)
     
     # wait for any key to be pressed
-    if cv2.waitKey(1) & 0xFF == ord('q'):
+    if cv2.waitKey(1) == 27:
         break
 
 # release video capture

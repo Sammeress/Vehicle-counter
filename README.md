@@ -5,6 +5,6 @@ Model approach:
 - Ignoring small contours
 - Take centroid to track (red dot)
 - Append centroid to validVehicles
-- Check centorid passing line
+- Check centroid passing line
 - Print total vehicles 
-- Destory windows
+- Destroy windows

@@ -13,9 +13,9 @@ cap = cv2.VideoCapture('night1.mp4')
 
 while cap.isOpened():
     ret,frame = cap.read() #reads next frame
-    fgMask = BS_MOG2.apply(frame) #foreground mask
+    mask = BS_MOG2.apply(frame) #foreground mask
     cv2.line(frame, (0,450), (1200,450), (0,0,255), 2) #red line
-    contours,h = cv2.findContours(fgMask, cv2.RETR_LIST, cv2.CHAIN_APPROX_SIMPLE) #contour 
+    contours,h = cv2.findContours(mask, cv2.RETR_LIST, cv2.CHAIN_APPROX_SIMPLE) #contour 
     for c in contours:
         x, y, w, h = cv2.boundingRect(c)
 

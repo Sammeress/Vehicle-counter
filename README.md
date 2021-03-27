@@ -1,10 +1,2 @@
 # Vehicle-counter
-Model approach:
-- Use BackgroundSubtractorMOG2 to apply to frame
-- Bounding rectangle around contours (green box)
-- Ignoring small contours
-- Take centroid to track (red dot)
-- Append centroid to validVehicles
-- Check centroid passing line
-- Print total vehicles 
-- Destroy windows
+Report: https://docs.google.com/document/d/1-y2CTXzOx1scFJrYPQDz_FMnry6KglrjOo6P_kXTv-I/edit?usp=sharing

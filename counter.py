@@ -32,10 +32,10 @@ while cap.isOpened():
             # add all valid vehiles into List Array
             validVehiles.append((xMid,yMid))
             
-            for (vX, vY) in validVehiles:
-                if vY > 450 and vY < 456: #frame change
+            for (xMid, yMid) in validVehiles:
+                if yMid > 450 and yMid < 456:
                     vehile += 1
-                    validVehiles.remove((vX,vY))
+                    validVehiles.remove((xMid,yMid))
 
     cv2.putText(frame, 'Vehicle count : {}'.format(vehile), (450, 50), cv2.FONT_HERSHEY_PLAIN, 2, (255,0,0), 2) #blue text
     cv2.imshow('Original Video', frame)
